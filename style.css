@@ -1,0 +1,144 @@
+body {
+    background-color: azure;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+}
+
+h1 {
+    display: block;
+    background-color: rgb(159, 177, 177);
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(34, 34, 74);
+}
+
+
+.box {
+    height: 30vw;
+    width: 30vw;
+    padding: 1vw;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+    gap: 10px;
+    position: relative;
+}
+
+.b {
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1;
+    box-shadow: 20px 0 10px 0 rgb(54, 54, 55);
+}
+
+#b1 {
+    border: 5px solid rgb(254, 254, 254);
+    border-top-left-radius: 100%;
+    background: #e20808;
+}
+
+#b2 {
+    border: 5px solid rgb(254, 254, 254);
+    border-top-right-radius: 100%;
+    background: blue;
+}
+
+#b3 {
+    border: 5px solid rgb(254, 254, 254);
+    border-bottom-left-radius: 100%;
+    background: yellow;
+}
+
+#b4 {
+    border: 5px solid rgb(254, 254, 254);
+    border-bottom-right-radius: 100%;
+    background: green;
+}
+
+.centre {
+    height: 15vw;
+    width: 15vw;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    /* display: none; */
+    font-size: 3.5vw;
+    font-family: Georgia;
+    font-weight: 800;
+    margin: 0;
+}
+
+h2 {
+    /* display: none; */
+    font-size: 1.5vw;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+#icon {
+    display: none;
+    font-size: 8vw; 
+    color: rgb(0, 0, 0);
+    z-index: 20;
+}
+
+/* .icon:hover {
+    display: block;
+    color: black;
+} */
+
+@media (max-width: 768px) {
+    .box {
+        height: 40vw;
+        width: 40vw;
+    }
+
+    .centre {
+        height: 20vw;
+        width: 20vw;
+    }
+
+    p {
+        font-size: 8vw;
+    }
+
+    h2 {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        height: 50vw;
+        width: 50vw;
+    }
+
+    .centre {
+        height: 25vw;
+    }
+
+    p {
+        font-size: 10vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+}
