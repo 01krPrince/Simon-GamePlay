@@ -70,25 +70,14 @@ async function init() {
 init();
 
 
-
-let p = document.getElementsByTagName("p");
-let h2 = document.getElementsByTagName("h2");
-let icon = document.getElementById("icon");
-
-let centre = document.getElementsByClassName("centre")[0];
-
+let centre = document.querySelector(".center-circle");
 centre.addEventListener("mouseover", function () {
-    p[0].style.display = "none";
-    h2[0].style.display = "none";
-    // p[1].style.display = "none";
-    // h2[1].style.display = "none";
-    icon.style.display = "block";
+    document.getElementById("icon").style.display = "block";
+    document.getElementsByTagName("p")[0].style.display = "none";
+    document.getElementsByTagName("h2")[0].style.display = "none";
 });
-
 centre.addEventListener("mouseout", function () {
-    p[0].style.display = "block";
-    h2[0].style.display = "block";
-    // p[1].style.display = "block";
-    // h2[1].style.display = "block";
-    icon.style.display = "none";
+    document.getElementById("icon").style.display = "none";
+    document.getElementsByTagName("p")[0].style.display = "block";
+    document.getElementsByTagName("h2")[0].style.display = "block";
 });
