@@ -47,6 +47,8 @@ Watch closely and memorize the sequence of button presses.
 Pay attention to the pattern of light flashes and sounds.
 Try to beat your highest score!
 
+[Start Playing](https://01krprince.github.io/Simon-GamePlay/)
+
 ------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------THE END---------------------------------------------------------------
